@@ -17,6 +17,8 @@ Converting innerHTML to markdown:
 ```javascript
 const div = document.getElementById('my-div');
 const markdown = htmlToMarkdown(div.innerHTML);
+// copying to clipboard
+await navigator.clipboard.writeText(markdown);
 ```
 
 ## License
